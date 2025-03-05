@@ -27,7 +27,7 @@ class FileTransformer implements DataTransformerInterface
      *
      * @return UploadedFile
      */
-    public function reverseTransform($data)
+    public function reverseTransform(mixed $data): mixed
     {
         return $data['file'];
     }
